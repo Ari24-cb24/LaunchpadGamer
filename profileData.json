@@ -1,0 +1,19 @@
+[
+
+  {
+    "name": "rocketLeague",
+    "color": 52,
+    "colorFeedback": 9,
+    "keys": [
+      {
+        "name": "forward",
+        "lpPos": [2, 3],
+        "button": "w",
+        "isButton": true,
+        "color": 67,
+        "colorFeedback": 9
+      }
+    ]
+  }
+
+]
