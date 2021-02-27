@@ -179,6 +179,26 @@ if __name__ == '__main__':
 
 Btw, you have to handle things like pausing the game if the user leaves your profile page (aka the custom page) yourself.
 
+To light buttons you can use
+```python
+c = Controller()
+
+c.fill(colorcode) # fills the whole launchpad plate (not settings and profile buttons)
+c.ledOn(x, y, colorcode, pulse=False) # starting at the top left rect, not circle
+c.ledOff(x, y)
+```
+
+To use more commands, you can use the commands from the launchpad_py library.
+Simply just write
+```python
+c = Controller()
+c.lp.some_function()
+```
+
+These functions will probably start at the top left circle not rect.
+
+There aren't any docs yet. 
+
 # Getting help
 
 If you need some help, please open an issue instead of texting me per twitter etc.
