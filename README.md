@@ -1,6 +1,9 @@
 # LaunchpadGamer
 This is a Python project for playing computer games on the Launchpad MK 2/Playing directly
 
+NOTE:
+This program is currently not in a final stage!
+
 # How to setup
 First of all you have to download Python 3.7  
 You can download it here: https://www.python.org/
@@ -14,6 +17,12 @@ python3 -m pip install <packagename>
 - launchpad_py (I'll explain in a second more details)
 - pynput
 - playsound (Currently not implemented)
+
+You could just run
+
+```bash
+python3 -m pip install launchpad_py pynput playsound
+```
 
 ### launchpad_py
 
