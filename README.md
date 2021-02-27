@@ -48,6 +48,12 @@ Blue means Custom page. Developers can use the blue profile page in order to cre
 Oranges is just a normal gameController page.  
 Pink is the currently selected page.  
    
+## Setting buttons
+
+The circles at the right are setting buttons.  
+You should see a red circle at the bottom right.  
+If you press this circle, the program will close and exit save. I recommend using this button instead of terminating the python script.
+
 ## Playing specific games on the launchpad itself  
  
 So there are some games you can play on the launchpad itself.  
@@ -116,3 +122,62 @@ Launchpad has a special color pallette so you can't use normal RGB Values.
 List of Velocity Color values  
   
 ![image](https://user-images.githubusercontent.com/56089155/109394380-00db7580-7927-11eb-94f0-22397babf937.png)
+
+# Creating own playable game on the Launchpad
+
+If you're a developer, you can create your own games.  
+Simply go to the Games folder, create a folder for your game, add a Python file and insert the following:
+```python
+from Controller import Controller
+
+c = Controller()
+
+# You don't have to implement these events
+@c.event
+def on_button_press():
+  # used for button press
+  pass
+
+@c.event
+def on_button_release():
+  # used for button release
+  pass
+
+@c.event
+def on_settings_button_press():
+  # used for these circles at the right side
+  pass
+  
+@c.event
+def on_exit():
+  # If the launchpad is closed
+  pass
+  
+@c.event
+def on_profile_enter():
+  # if the user enters your profile aka the custom profile
+  pass
+  
+@c.event
+def on_profile_exit():
+  # if the user leaves your profile aka the custom profile
+  pass
+ 
+ 
+if __name__ == '__main__':
+  c.run()
+```
+
+Btw, you have to handle things like pausing the game if the user leaves your profile page (aka the custom page) yourself.
+
+# Getting help
+
+If you need some help, please open an issue instead of texting me per twitter etc.
+
+# Contributing
+
+Just open an Issue
+
+# License
+
+Yeah, I'll add that later on
