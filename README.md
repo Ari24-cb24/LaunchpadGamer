@@ -113,5 +113,6 @@ keymode is the mode for the key used. You have to specifiy that.
 color and color feedback are used for coloring the button.
 Launchpad has a special color pallette so you can't use normal RGB Values.
 
-List of Velocity Color values
-(![image](https://user-images.githubusercontent.com/56089155/109394380-00db7580-7927-11eb-94f0-22397babf937.png)
+List of Velocity Color values  
+  
+![image](https://user-images.githubusercontent.com/56089155/109394380-00db7580-7927-11eb-94f0-22397babf937.png)
