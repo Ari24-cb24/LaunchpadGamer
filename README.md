@@ -1,8 +1,9 @@
-# LaunchpadGamer
-This is a Python project for playing computer games on the Launchpad MK 2/Playing directly
+### Disclaimer
+I haven't really been working on this project since a couple of months. PRs are welcomed!
+  
 
-NOTE:
-This program is currently not in a final stage!
+# LaunchpadGamer
+This is a Python project for playing computer games on the Launchpad MK 2/Playing directly 
 
 # How to setup
 First of all you have to download Python 3.7  
